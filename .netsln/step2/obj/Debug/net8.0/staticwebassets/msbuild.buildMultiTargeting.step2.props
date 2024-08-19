@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\step2.props" />
+</Project>
