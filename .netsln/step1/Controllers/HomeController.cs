@@ -6,9 +6,7 @@ using System.Collections.Generic;
 
 namespace step1.Controllers
 {
-    public class HomeController : Controller
-    {
-
+   
         public class FormController : Controller
         {
             // GET: Form/SubmitForm
@@ -43,7 +41,7 @@ namespace step1.Controllers
                     // Yanıtı ViewBag ile View'a gönderebilirsiniz, fakat burada sadece Controller ile yapılacağı için direkt response döndürüyoruz.
                     return Content($"Status Code: {statusCode}\nResponse Text: {responseText}");
                 }
-            }
+            
         }
     }
 
