@@ -12,19 +12,19 @@ namespace step2.Controllers
         {
             using (HttpClient client = new HttpClient())
             {
-                // URL'yi belirtin
+              
                 string url = "https://example.com/api/resource"; // API URL'sini buraya ekleyin
 
-                // Authorization baþlýðýný ekleyin
+               
                 client.DefaultRequestHeaders.Add("Authorization", "key"); // Authorization key'i buraya ekleyin
 
-                // POST isteðini gönderin
+                
                 HttpResponseMessage response = await client.PostAsync(url, null);
 
-                // Yanýtý alýn ve metin olarak okuyun
+               
                 string responseText = await response.Content.ReadAsStringAsync();
 
-                // Alternatif olarak, yanýtý Content olarak döndürebilirsiniz
+                // Alternatif olarak, yanÃ½tÃ½ Content olarak dÃ¶ndÃ¼rebilirsiniz
                 return Content(responseText);
             }
         }
